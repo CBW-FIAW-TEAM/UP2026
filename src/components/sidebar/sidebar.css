@@ -1,0 +1,20 @@
+/* src/components/Footer.css */
+.sidebar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .sidebar a:hover {
+    text-decoration: underline;
+  }
