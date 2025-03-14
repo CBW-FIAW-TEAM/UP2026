@@ -1,21 +1,40 @@
 /* src/components/Footer.css */
 .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column; /* Standard: übereinander für kleine Screens */
+  align-items: center;
+  gap: 10px; /* Abstand zwischen Elementen */
+  width: 90%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Medium Screens (z. B. Tablets) */
+@media (min-width: 600px) {
+  .footer {
+    flex-direction: row; /* Links nebeneinander */
+    justify-content: space-between;
+    padding: 15px 50px;
   }
-  
-  .footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+}
+
+/* Große Screens (Desktops) */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 20px 100px;
   }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
+}

@@ -1,20 +1,67 @@
-/* src/components/Footer.css */
-.sidebar {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* Grundstruktur der Sidebar */
+.sidebar  {
+  max-width: 20vh; /* Feste Breite */
+  height: 100vh; /* Höhe der gesamten Seite */
+  background-color: #2c3e50; /* Dunkelblau/Grau */
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* Falls die Inhalte größer als die Sidebar sind */
+}
+
+/* Überschriften in der Sidebar */
+.sidebar h3 {
+  font-size: 18px;
+  border-bottom: 2px solid #1abc9c;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* Liste für schnelle Links */
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  margin: 10px 0;
+}
+
+.quick-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.quick-links a:hover {
+  background-color: #1abc9c; /* Grün beim Hover */
+}
+
+/* Werbeanzeige */
+.ad-section {
+  background: #34495e;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Extra Inhalte */
+.extra-content {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Responsive Anpassung für kleine Bildschirme */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 20vh; /* Kleinere Sidebar auf mobilen Geräten */
   }
-  
-  .sidebar a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+
+  .quick-links a {
+    font-size: 14px;
   }
-  
-  .sidebar a:hover {
-    text-decoration: underline;
-  }
+}
