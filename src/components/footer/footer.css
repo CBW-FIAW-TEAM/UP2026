@@ -9,7 +9,7 @@
   align-items: center;
   gap: 10px; /* Abstand zwischen Elementen */
   width: 90%;
-  position: fixed;
+  position: relative;
   bottom: 0;
 }
 
